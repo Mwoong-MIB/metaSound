@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @GetMapping("/Hello") //HTTP Method인 Get의 요청을 받을 수 있는 API 생성.
+    @GetMapping("/hello") //HTTP Method인 Get의 요청을 받을 수 있는 API 생성.
     public String hello(){
         return "Hello";
     }

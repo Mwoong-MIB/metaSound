@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.ResultActions;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -24,7 +23,7 @@ public class HelloControllerTest {
 
     @Test
     public void hello가_리턴된다() throws Exception{
-        String hello = "hello";
+        String hello = "Hello";
 
         //MockMvc 통해 /hello 주소로 HTTP GET 요청.
         mvc.perform(get("/hello"))
